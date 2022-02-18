@@ -1,0 +1,35 @@
+.donate-container {
+  .donate-success {
+    transition: 0.3s;
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  &.done {
+    .donate-success {
+      transform: scale(1);
+      opacity: 1;
+    }
+    .avatar-container {
+      top: 0 !important;
+    }
+  }
+}
+
+.avatar-container {
+  transition: 0.4s;
+  &:hover {
+    > div:nth-child(2) {
+      transform: translate(55px, -30px) rotate(55deg);
+    }
+  }
+
+  > div {
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:nth-child(1) {
+      z-index: 1;
+    }
+  }
+}

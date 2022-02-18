@@ -1,0 +1,100 @@
+@import '~antd/dist/antd.less';
+
+@primary-color: #3aac59;
+@border-radius-base: 20px;
+@shadow-color: @primary-color;
+
+.App {
+  min-height: 100%;
+}
+
+.container {
+  width: 1166px;
+  margin: 0 auto;
+}
+
+.select-theme {
+  border-radius: 10px;
+
+  input,
+  .ant-select-selector {
+    border-radius: 10px !important;
+    height: 48px !important;
+    background-color: #f3f5f3 !important;
+    border: 1px solid #f3f5f3 !important;
+  }
+
+  .ant-select-selection-item {
+    line-height: 45px !important;
+    font-weight: bold !important;
+  }
+}
+
+.input-theme {
+  height: 48px;
+  border-radius: 10px;
+  background-color: #f3f5f3;
+  border: 1px solid #f3f5f3;
+
+  .ant-input {
+    background-color: #f3f5f3;
+    border-radius: 0;
+  }
+}
+
+.ant-form-item-label {
+  font-weight: bold;
+}
+
+.btn-theme {
+  height: 58px;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  opacity: 0.8;
+
+  &.ant-btn-loading {
+    background-color: #dedede;
+    border-color: #dedede;
+    color: #000;
+    opacity: 1;
+  }
+}
+
+.btn-theme-color {
+  background: linear-gradient(
+    95.91deg,
+    #63d17b 4.06%,
+    #26ddc7 93.65%
+  ) !important;
+  border: none;
+  border-radius: 30px;
+  text-shadow: none;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.modal-theme {
+  .ant-modal-content {
+    border-radius: 40px;
+  }
+}
+
+.popover-theme {
+  .ant-popover-arrow {
+    display: none;
+  }
+
+  .ant-popover-inner-content {
+    margin-top: -5px !important;
+  }
+}
+
+.modal-theme2 {
+  .ant-modal-header {
+    border: none;
+  }
+}
