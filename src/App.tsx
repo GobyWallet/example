@@ -8,6 +8,7 @@ import svg4 from './assets/images/img-4.svg';
 import svg5 from './assets/images/img-5.svg';
 import svg6 from './assets/images/img-6.svg';
 import svg1 from './assets/images/img-7.svg';
+import logo from './assets/images/full_logo.svg';
 import Donate from './components/Donate';
 import Login from './components/Login';
 import UserInfo from './components/UserInfo';
@@ -87,7 +88,7 @@ function App() {
     }}>
       <header className="flex-none py-[8px] container flex items-center justify-between">
         <a href="/" className="w-[105px] h-[35px]">
-          <img src="/src/assets/images/logo.svg" alt="" />
+          <img src={logo} alt="" />
         </a>
 
         {account ? <UserInfo account={account!} /> : <Button onClick={handleConnect} className="btn-theme-color" size="large" type="primary">

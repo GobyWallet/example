@@ -101,9 +101,7 @@ const Donate: React.FC<DonateProps> = ({ account }) => {
     const params = {
       to,
       amount: sendAmount,
-      memos: '',
       assetId: currentAsset.assetId,
-      fee: 0,
     }
     try {
       await window.chia.request({ method: 'transfer', params })
